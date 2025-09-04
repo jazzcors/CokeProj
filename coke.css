@@ -2,24 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color:white;
 }
 
-.logo {
-  display: flex;
-  align-items: left;
-  height: 100px;
-  width: 100px;
+/* Logo */
+.logo img {
+  height: 80px;
+  width: auto;
 }
 
+/* Header */
 .head {
   background-color: white;
-
 }
 
 .navbar {
@@ -27,35 +25,42 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 60px;
-  color: white;
 }
 
+/* Navigation links */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
 }
 
-.nav-links a{
+.nav-links a {
   color: #ff0000;
   font-weight: bold;
+  text-decoration: none;
 }
 
+.nav-links a:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
   height: 90vh;
-  background: #fff;
+  background: #f5f5f5;
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10%;
+  margin-bottom: 40px;
 }
 
-
+/* Text Content */
 .content {
-  position:relative;
-  justify-content: left;
-  top: -15%;
+  position: relative;
   z-index: 2;
   max-width: 500px;
 }
@@ -71,6 +76,22 @@ body {
   color: #555;
 }
 
+button {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+button:hover {
+  background: black;
+  transition: 0.3s;
+}
+
+/* Red Circle Background */
 .circle {
   position: absolute;
   right: -20%;
@@ -83,20 +104,131 @@ body {
   z-index: 1;
 }
 
-button {
-  background: #ff0000;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 25px;
-}
-
+/* Coke Can Image */
 .coke-can {
   position: absolute;
-  right: 1%;
+  right: 5%;
   top: 10%;
   height: 600px;
   z-index: 2;
 }
+
+/* Evolution Section */
+.evolution {
+  text-align: center;
+  padding: 60px 10%;
+  background-color: #f5f5f5;
+}
+
+.evolution h2 {
+  font-size: 2rem;
+  color: #d60000;
+  margin-bottom: 10px;
+}
+
+.evolution p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.bottle-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.bottle-box {
+  background: #ffecec;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 6px solid #ff0000; /* 🔴 Coca-Cola red highlight */
+  overflow: hidden; /* ensures caption fits nicely inside rounded corners */
+}
+
+/* Hover effect (keep same) */
+.bottle-box:hover {
+  transition: transform 0.1s ease-out;
+  transform: translateY(-5px);
+  box-shadow: -1px 0px 12px 5px rgba(255,0,0,0.43);
+  -webkit-box-shadow: -1px 0px 12px 5px rgba(255,0,0,0.43);
+  -moz-box-shadow: -1px 0px 12px 5px rgba(255,0,0,0.43);
+}
+
+.bottle-box img {
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 0; /* no spacing, caption will handle padding */
+}
+
+/* Caption with white background */
+.bottle-caption {
+  background: #fff; /* White background */
+  width: 100%;
+  padding: 20px;
+  text-align: left; /* ⬅️ Aligns text left */
+  border-radius: 0 0 10px 10px;
+}
+
+.bottle-caption h4 {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 12px; /* pill shape */
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Different background colors for each type */
+.bottle-caption h4 {
+  color: #ed0101;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px; /* pill shape */
+  margin-bottom: 10px;
+  background-color: rgba(255, 0, 0, 0.559); /* deep red with 70% opacity */
+}
+
+
+
+.bottle-caption h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.bottle-caption p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.bottle-caption button {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 5px 0;           /* thin height */
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 10px;      /* ⬅️ all corners rounded */
+  width: 100%;
+  display: block;
+}
+
+.bottle-caption button:hover {
+  background: black;
+  transition: 0.3s;
+}
+
+
+
+  
+
