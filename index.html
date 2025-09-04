@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Coke Hero Page</title>
-  <link rel="stylesheet" href="coke.css">
+  <link rel="stylesheet" href="coke.css" />
 </head>
 <body>
-     <header class ="head">
-      <nav class ="navbar">
-            <a href="#" class="logo"><img src="coke.jpg" alt="logo.png"></a>
-            <ul class="nav-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">What's New</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            </nav>
-        </header>
+  <header class="head">
+    <nav class="navbar">
+      <a href="#" class="logo"><img src="coke.jpg" alt="Coca-Cola Logo"></a>
+      <ul class="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">What's New</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
   <section class="hero">
     <div class="circle"></div>
-    
+
     <div class="content">
       <h1>Refresh Your Day</h1>
       <p>Experience the real taste of Coca-Cola. Open happiness with every sip.</p>
       <button>Order Now</button>
     </div>
-    
-    <img  src="coke.png" alt="Coke Can" class="coke-can">
+
+    <img src="coke.png" alt="Coke Can" class="coke-can">
+  </section>
+
+  <!-- Evolution Section -->
+  <section class="evolution">
+    <h2>Coca-Cola Bottle Evolution</h2>
+    <p>From vintage glass to today's modern contour.</p>
+
+    <div class="bottle-container">
+      <!-- Vintage -->
+      <div class="bottle-box">
+        <img src="Vintage.png" alt="Vintage Glass Bottle">
+        <div class="bottle-caption">
+          <h4 class="vintage">Old–Early 1900s</h4>
+          <h3>Vintage Glass Bottle</h3>
+          <p>Heavy glass, straight-sided beginnings evolving toward the iconic shape.</p>
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <!-- Classic Contour -->
+      <div class="bottle-box">
+        <img src="Classic.png" alt="Classic Contour Glass">
+        <div class="bottle-caption">
+          <h4 class="classic">Classic–Mid 1900s</h4>
+          <h3>Classic Contour Glass</h3>
+          <p>The famous hourglass silhouette that became a worldwide icon.</p>
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <!-- PET -->
+      <div class="bottle-box">
+        <img src="PET.png" alt="Modern PET Bottle">
+        <div class="bottle-caption">
+          <h4 class="modern">Modern–Today</h4>
+          <h3>Modern PET Contour</h3>
+          <p>Lightweight PET keeps the iconic contour while improving portability.</p>
+          <button>View Details</button>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 </html>
