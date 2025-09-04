@@ -6,16 +6,14 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color:white;
+  background-color: white;
 }
 
-/* Logo */
 .logo img {
   height: 80px;
   width: auto;
 }
 
-/* Header */
 .head {
   background-color: white;
 }
@@ -27,7 +25,6 @@ body {
   padding: 10px 60px;
 }
 
-/* Navigation links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -45,7 +42,6 @@ body {
   transition: 0.3s;
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   height: 90vh;
@@ -58,7 +54,6 @@ body {
   margin-bottom: 40px;
 }
 
-/* Text Content */
 .content {
   position: relative;
   z-index: 2;
@@ -91,7 +86,6 @@ button:hover {
   transition: 0.3s;
 }
 
-/* Red Circle Background */
 .circle {
   position: absolute;
   right: -20%;
@@ -104,7 +98,6 @@ button:hover {
   z-index: 1;
 }
 
-/* Coke Can Image */
 .coke-can {
   position: absolute;
   right: 5%;
@@ -113,7 +106,6 @@ button:hover {
   z-index: 2;
 }
 
-/* Evolution Section */
 .evolution {
   text-align: center;
   padding: 60px 10%;
@@ -146,11 +138,10 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 6px solid #ff0000; /* 🔴 Coca-Cola red highlight */
-  overflow: hidden; /* ensures caption fits nicely inside rounded corners */
+  border-top: 6px solid #ff0000;
+  overflow: hidden;
 }
 
-/* Hover effect (keep same) */
 .bottle-box:hover {
   transition: transform 0.1s ease-out;
   transform: translateY(-5px);
@@ -162,15 +153,14 @@ button:hover {
 .bottle-box img {
   height: 250px;
   object-fit: contain;
-  margin-bottom: 0; /* no spacing, caption will handle padding */
+  margin-bottom: 0;
 }
 
-/* Caption with white background */
 .bottle-caption {
-  background: #fff; /* White background */
+  background: #fff;
   width: 100%;
   padding: 20px;
-  text-align: left; /* ⬅️ Aligns text left */
+  text-align: left;
   border-radius: 0 0 10px 10px;
 }
 
@@ -179,23 +169,12 @@ button:hover {
   padding: 4px 12px;
   font-size: 0.85rem;
   font-weight: bold;
-  color: white;
-  border-radius: 12px; /* pill shape */
+  color: #ed0101;
+  border-radius: 12px;
   margin-bottom: 10px;
   width: 100%;
+  background-color: rgba(255, 0, 0, 0.559);
 }
-
-/* Different background colors for each type */
-.bottle-caption h4 {
-  color: #ed0101;
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 12px; /* pill shape */
-  margin-bottom: 10px;
-  background-color: rgba(255, 0, 0, 0.559); /* deep red with 70% opacity */
-}
-
-
 
 .bottle-caption h3 {
   font-size: 1.3rem;
@@ -210,15 +189,14 @@ button:hover {
   text-align: left;
 }
 
-
 .bottle-caption button {
   background: #ff0000;
   color: white;
   border: none;
-  padding: 5px 0;           /* thin height */
+  padding: 5px 0;
   font-size: 0.9rem;
   cursor: pointer;
-  border-radius: 10px;      /* ⬅️ all corners rounded */
+  border-radius: 10px;
   width: 100%;
   display: block;
 }
@@ -227,8 +205,3 @@ button:hover {
   background: black;
   transition: 0.3s;
 }
-
-
-
-  
-
